@@ -1,0 +1,1 @@
+amt = int(input("Enter amount: "))
