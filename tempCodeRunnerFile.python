@@ -1,0 +1,15 @@
+def remove_consecutive_words(sentence):
+    words=sentence.split()
+    result=''
+    perv_word=''
+    for word in words:
+        if word!=perv_word:
+            if result:
+                result=result+''
+            result=result+word
+        perv_word=word
+
+    return result
+
+sentence=input("Sentence:")
+print("New:",remove_consecutive_words(sentence))
